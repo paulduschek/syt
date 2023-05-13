@@ -8,6 +8,9 @@ int buttonState;
 int main(){
 	wiringPiSetupPhys();
 	
+	pinMode(BUTTON, INPUT);
+	pinMode(LED, OUTPUT);
+	
 	while(true){
 		buttonState = digitalRead(BUTTON);
 		if(buttonState == 1){
