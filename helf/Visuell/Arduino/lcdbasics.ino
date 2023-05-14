@@ -19,6 +19,7 @@ void loop() {
   int poti = analogRead(POTI_PIN);
 
   // set the cursor to a specific position (cols, rows)
+  // numbers beginning with 0, so if there are 4 rows -> 0,1,2,3
   lcd.setCursor(6, 3);
   // print something to the lcd display on the cursor pos currently set
   lcd.print(poti);
