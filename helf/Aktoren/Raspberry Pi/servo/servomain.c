@@ -7,7 +7,7 @@ void main(){
 	int input;
 	while(1){
 		printf("give 1-180\n");
-		sscanf("%d", &input);
+		scanf("%d", &input);
 		if(input > 0 && input <= 180){
 			writeServo(input);
 		}

@@ -4,7 +4,7 @@
 
 void setupServo(int servoNr){
 	nr = servoNr;
-	fopen(PATH, "w");
+	file = fopen(PATH, "w");
 }
 
 void writeServo(int input){
